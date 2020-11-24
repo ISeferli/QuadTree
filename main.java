@@ -20,13 +20,13 @@ public class Main {
 
 		  System.out.println("-------------------QUAD TREE--------------------");
 	 //For M>50000 sometimes it has stack overflow errors and so we use N = 2^19, KD Tree works fine with N = 2^16
-		  M = 1000; 
-		  helper = new Point2D[M];
-		  quadTreeHelp(M);
-		  M = 10000;
-		 helper = new Point2D[M];
-		 quadTreeHelp(M);
-		 M = 30000;
+		M = 1000; 
+		helper = new Point2D[M];
+		quadTreeHelp(M);
+		M = 10000;
+		helper = new Point2D[M];
+		quadTreeHelp(M);
+		M = 30000;
 		helper = new Point2D[M];
 		quadTreeHelp(M);
 		M = 50000;
